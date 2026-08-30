@@ -1,35 +1,14 @@
-/**
- * tipos.ts
- * --------
- * Aquí definimos las formas de datos permitidas
- * para nuestro Generador de Ideas Creativas.
- */
 
-
-// TYPE 1: Mood
-// Una idea solamente puede tener uno de estos moods.
-//
-// IMPORTANTE:
-// Por ahora vamos a dejar "minimalista" afuera a propósito.
-// Cuando migremos ideas.js a TypeScript,
-// TypeScript debería detectar el problema.
-// Esto replica el ejercicio que hicimos en clase.
 export type Mood =
-  | "irreverente"
-  | "emocional"
-  | "absurdo";
+  | "irreverente"| "emocional" | "absurdo"| "minimalista";
 
 
-// TYPE 2: Formato
-// Solo permitimos estos formatos.
+
 export type Formato =
-  | "reel"
-  | "post"
-  | "valla";
+  | "reel" | "post"| "valla";
 
 
-// TYPE 3: Interface Idea
-// Define qué información debe tener una idea.
+
 export interface Idea {
 
   // Puede ser número en las ideas originales
@@ -47,4 +26,6 @@ export interface Idea {
 
   // El nivel creativo siempre debe ser un número.
   nivelCreativo: number;
+  
+  formato: Formato;
 }
