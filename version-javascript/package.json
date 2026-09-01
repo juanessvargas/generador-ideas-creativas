@@ -1,0 +1,9 @@
+{
+  "name": "generador-ideas-creativas-js",
+  "version": "1.0.0",
+  "description": "Version JavaScript del Generador de Ideas Creativas",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
